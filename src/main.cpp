@@ -5,7 +5,9 @@
 using namespace std;
 
 int main() {
+
     vector<char> letras = {'L', 'A', ' ', 'M', 'A', 'R', 'C', 'H', 'A', ' ', 'D', 'E'};
+
     cout << "Original: ";
     for (size_t i = 0; i < letras.size(); ++i) {
         cout << letras[i];
@@ -17,8 +19,10 @@ int main() {
         cout << letras[i];
     }
     cout << endl;
+
     int vocalesOriginal = contarVocales(letras);
     cout << "Número de vocales: " << vocalesOriginal << endl;
+
     for (char &c : letras) {
         c = tolower(c);
     }
@@ -33,7 +37,6 @@ int main() {
     for (char c : restoFrase) {
         letras.push_back(c);
     }
-
 
     cout << "Vector Extendido: ";
     for (char c : letras) {
