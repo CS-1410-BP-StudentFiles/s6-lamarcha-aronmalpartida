@@ -5,9 +5,7 @@
 using namespace std;
 
 int main() {
-
     vector<char> letras = {'L', 'A', ' ', 'M', 'A', 'R', 'C', 'H', 'A', ' ', 'D', 'E'};
-
     cout << "Original: ";
     for (size_t i = 0; i < letras.size(); ++i) {
         cout << letras[i];
@@ -19,10 +17,8 @@ int main() {
         cout << letras[i];
     }
     cout << endl;
-
     int vocalesOriginal = contarVocales(letras);
     cout << "Número de vocales: " << vocalesOriginal << endl;
-
     for (char &c : letras) {
         c = tolower(c);
     }
@@ -38,6 +34,7 @@ int main() {
         letras.push_back(c);
     }
 
+
     cout << "Vector Extendido: ";
     for (char c : letras) {
         cout << c;
@@ -49,5 +46,3 @@ int main() {
 
     return 0;
 }
-// use IA para agregar los archivos para complementar el conteo de vocales , entender el codigo size_t , , entender el for( char c : letras ) como actua
-// como unir dos vectores en 1  con el  letras.push_ back (c) ;
